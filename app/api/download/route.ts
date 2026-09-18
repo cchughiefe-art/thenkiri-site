@@ -1,10 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 
 const APK_URL =
-  "https://github.com/cchughiefe-art/nkiri-bot/releases/download/beta-8/TheNkiri-v3.1.0-beta1.apk";
+  "https://github.com/cchughiefe-art/nkiri-bot/releases/download/beta-9/TheNkiri-v3.1.0-beta2.apk";
 
 const APK_NAME =
-  "TheNkiri-v3.1.0-beta1.apk";
+  "TheNkiri-v3.1.0-beta2.apk";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";

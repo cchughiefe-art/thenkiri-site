@@ -16,8 +16,8 @@ function humanSize(bytes: number) {
 }
 
 const RELEASE_REPO = "cchughiefe-art/nkiri-bot";
-const RELEASE_TAG = "beta-8";
-const APK_NAME = "TheNkiri-v3.1.0-beta1.apk";
+const RELEASE_TAG = "beta-9";
+const APK_NAME = "TheNkiri-v3.1.0-beta2.apk";
 
 export async function getRelease(): Promise<ReleaseInfo> {
   try {
@@ -49,8 +49,8 @@ export async function getRelease(): Promise<ReleaseInfo> {
             : null;
 
         return {
-          versionName: "3.1.0-beta1",
-          versionCode: 8,
+          versionName: "3.1.0-beta2",
+          versionCode: 9,
           downloadUrl: asset.browser_download_url,
           size: humanSize(Number(asset.size || 0)),
           sha256: digest,
@@ -63,13 +63,13 @@ export async function getRelease(): Promise<ReleaseInfo> {
   } catch {}
 
   return {
-    versionName: "3.1.0-beta1",
-    versionCode: 8,
+    versionName: "3.1.0-beta2",
+    versionCode: 9,
     downloadUrl:
-      "https://github.com/cchughiefe-art/nkiri-bot/releases/download/beta-8/TheNkiri-v3.1.0-beta1.apk",
-    size: "3.8 MB",
+      "https://github.com/cchughiefe-art/nkiri-bot/releases/download/beta-9/TheNkiri-v3.1.0-beta2.apk",
+    size: "3.9 MB",
     sha256:
-      "2cda593c17f03cb953473df605cea178fb9c209d4294c98753da33c86cd95d9f",
+      "348d8501ad81b672e69ea95a583f721afe80db2c039c44c140b7aa4d8dae56b4",
     releasedAt: null,
     channel: "beta",
     source: "env"
