@@ -43,7 +43,7 @@ export default function DownloadPage() {
         <p className="note">{release.size ? `${release.size} · ` : ""}Android 10+ · APK</p>
 
         {release.downloadUrl ? (
-          <a className="btn btn-primary" style={{width:"100%",marginTop:14}} href={release.downloadUrl}>Download APK</a>
+          <a className="btn btn-primary" style={{width:"100%",marginTop:14}} href="/api/download" download>Download APK</a>
         ) : (
           <p className="error">The APK has not been attached to the beta site yet. Your tester registration is saved.</p>
         )}
